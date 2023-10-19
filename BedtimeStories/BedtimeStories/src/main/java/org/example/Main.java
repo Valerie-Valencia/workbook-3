@@ -18,17 +18,18 @@ public class Main {
 
        // String story1 = new FileInputStream(storyFile);
 
-        /*try{
+        /*
+        try{
             String storyChoice = scanner.nextLine();
             FileReader readStory = new FileReader(storyChoice);
         }catch (Exception e){
             System.out.println("Sorry! Didn't quite understand that.");
            e.printStackTrace();
             //Break;
-        }*/
+        }
 
-        /*swtich(storyChoice){
-            case 'A':
+        swtich(storyChoice){
+            case "A":
                 System.out.println("Goldilocks");
                 f1 = new FileInputStream("Goldilocks.text");
                 system.out.println(f1);

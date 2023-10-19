@@ -45,12 +45,12 @@ public class Employee {
 
     public double getPayRate(){
 
-        return this.payRate = payRate;
+        return hoursWorked / payRate;
     }
 
     public double getGrossPay(){
 
-        return hoursWorked / payRate;
+        return hoursWorked * payRate;
     }
 
     @Override
