@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String delimiter = "|";
+        String delimiter = "\\|";
 
         try{
 
@@ -20,20 +20,15 @@ public class Main {
 
             while((input = bufferedreader.readLine()) != null){
                 String[] tokens = input.split(delimiter);
-                //Employee[] employee = new Employee();
                 System.out.println("\n" + tokens[0]);
                 int id = Integer.parseInt(tokens[0]);
                 String name = tokens[1];
                 double hoursWorked = Double.parseDouble(tokens[2]);
                 double payRate = Double.parseDouble(tokens[3]);
 
-                Employee employee = new Employee(id, name, hoursWorked, payRate);
-                //System.out.printf("id: %d, name: %s, payRate: %f",employee.getEmployeeId());
-                //System.out.println("{" + employee.getId() + ", " + employee.getName() + ", " +
-                       //employee.getHoursWorked() + ", " + employee.getPayRate() + "}");
+                Employee e = new Employee(id, name, hoursWorked, payRate);git status
+                System.out.println(e);
 
-                System.out.println(employee);
-                break;
             }
 
             bufferedreader.close();
