@@ -7,14 +7,14 @@ public class Employee {
     private double hoursWorked;
     private double payRate;
 
-    //methods
-    public void constructor(int employeeId, String name, int hoursWorked, double payRate){
-        this.employeeId = employeeId;
+    public Employee(int id, String name, double hoursWorked, double payRate) {
+        this.employeeId = id;
         this.name = name;
         this.hoursWorked = hoursWorked;
         this.payRate = payRate;
     }
 
+    //methods
     //setters
     public String setName(String name){
         return this.name = name;

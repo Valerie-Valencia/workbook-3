@@ -33,6 +33,7 @@ public class Main {
                        //employee.getHoursWorked() + ", " + employee.getPayRate() + "}");
 
                 System.out.println(employee);
+                break;
             }
 
             bufferedreader.close();
